@@ -22,10 +22,11 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;
     scrollbar-width: none;
+    position: relative;
 }
 
 .site-wrapper {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -72,7 +73,7 @@ nav {
 }
 
 main {
-    margin-bottom: 84px;
+    margin-bottom: 35px;
 }
 
 footer {
@@ -118,14 +119,15 @@ footer {
 /*** HOME PAGE ***/
 .home-container {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
-        url("./assets/images/home-hero.png") no-repeat center center;
+        url("./assets/images/home-hero.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 350px;
+    min-height: 75vh;
     color: white;
     padding: 45px 23px;
+    
 }
 
 .home-container h1 {
@@ -137,9 +139,11 @@ footer {
 .home-container p {
     line-height: 24px;
 }
-
+.inner__home-container {
+    margin: 0 auto;
+    max-width: 610px;
+}
 .home-container a {
-    max-width: 650px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -300,8 +304,6 @@ i[class*="van-type-"] {
     text-decoration: none;
 }
 
-.van-detail-container .back-button:visited {
-}
 
 .van-detail-container .back-button span {
     text-decoration: underline;
